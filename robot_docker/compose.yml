@@ -1,0 +1,32 @@
+services:
+  base:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ROS_IP: ${ROS_IP}
+    stdin_open: true
+    tty: true
+    privileged: true
+    entrypoint: /bin/bash
+    network_mode: host
+    cap_add:
+      - ALL
+    restart: no
+    ulimits:
+      core: -1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ~/.ssh:/home/user/.ssh
+      - ../shared_data:/home/user/shared_data
+    environment:
+      - TERM=xterm-256color
+      - DISPLAY
+
+  dev:
+    extends: base
+    restart: always
+    volumes:
+      - ~/.cache/my-robot-dev:/home/user/data
+    environment:
+      - CUSTOM_PS=(robot-dev)

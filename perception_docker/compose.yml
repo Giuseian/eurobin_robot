@@ -1,0 +1,17 @@
+services:
+  perception:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    privileged: true
+    entrypoint: /bin/bash
+    network_mode: host
+    volumes:
+      - ../shared_data:/workspace/shared_data
+      - ../pose_estimation:/workspace/pose_estimation
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    runtime: nvidia

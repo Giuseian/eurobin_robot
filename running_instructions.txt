@@ -1,0 +1,128 @@
+### Instructions for robot_docker 
+
+Certo. Io farei così.
+
+## 1. Entra nella repo
+
+```bash
+cd EUROBIN_ROBOT
+```
+
+## 2. Carica il profilo del robot
+
+```bash
+source robot_profile.bash
+```
+
+Questo esporta:
+
+```bash
+ROS_IP=10.240.23.41
+ROS_MASTER_URI=http://10.24.4.100:11311
+```
+
+e rende disponibile il comando:
+
+```bash
+robot dev
+```
+
+## 3. Prima build dell’immagine
+
+```bash
+cd robot_docker
+docker compose build
+```
+
+oppure, per essere più puliti:
+
+```bash
+docker compose build --no-cache
+```
+
+## 4. Avvio del container
+
+```bash
+docker compose up dev -d
+```
+
+## 5. Entrare nel container
+
+```bash
+docker compose exec dev bash
+```
+
+Oppure, dalla root della repo, puoi usare direttamente:
+
+```bash
+robot dev
+```
+
+## 6. Verificare che le repo siano presenti
+
+Dentro il container:
+
+```bash
+ls /home/user
+```
+
+Dovresti vedere:
+
+```bash
+PoseEstimation
+eurobin
+shared_data
+```
+
+## 7. Rebuild dopo modifiche al Dockerfile
+
+Ogni volta che modifichi il `Dockerfile`, fai:
+
+```bash
+cd robot_docker
+docker compose down
+docker compose build --no-cache
+docker compose up dev -d
+docker compose exec dev bash
+```
+
+## 8. Rebuild dopo modifiche al compose.yml
+
+Se modifichi solo `compose.yml`, spesso basta:
+
+```bash
+cd robot_docker
+docker compose down
+docker compose up dev -d
+```
+
+Se hai cambiato anche build args, volumi importanti o Dockerfile, meglio:
+
+```bash
+docker compose down
+docker compose build --no-cache
+docker compose up dev -d
+```
+
+## 9. Pulizia completa, solo se serve
+
+```bash
+cd robot_docker
+docker compose down --volumes --remove-orphans
+docker compose build --no-cache
+docker compose up dev -d
+```
+
+Comando più importante da ricordare:
+
+```bash
+source robot_profile.bash
+cd robot_docker
+docker compose build --no-cache
+docker compose up dev -d
+docker compose exec dev bash
+```
+
+
+
+### Instructions for perception_docker 

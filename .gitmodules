@@ -1,0 +1,6 @@
+[submodule "pose_estimation"]
+	path = pose_estimation
+	url = https://github.com/Giuseian/PoseEstimation.git
+[submodule "eurobin"]
+	path = eurobin
+	url = https://github.com/Giuseian/eurobin.git
