@@ -1,128 +1,63 @@
-### Instructions for robot_docker 
+### Instructions for running robot_docker 
+cd eurobin_robot 
+source robot_profile.bash 
+cd robot_docker 
+robot dev   (which calls the setup.sh and directly calls the docker compose)
 
-Certo. Io farei così.
-
-## 1. Entra nella repo
-
-```bash
-cd EUROBIN_ROBOT
-```
-
-## 2. Carica il profilo del robot
-
-```bash
-source robot_profile.bash
-```
-
-Questo esporta:
-
-```bash
-ROS_IP=10.240.23.41
-ROS_MASTER_URI=http://10.24.4.100:11311
-```
-
-e rende disponibile il comando:
-
-```bash
-robot dev
-```
-
-## 3. Prima build dell’immagine
-
-```bash
+(or)
 cd robot_docker
-docker compose build
-```
-
-oppure, per essere più puliti:
-
-```bash
-docker compose build --no-cache
-```
-
-## 4. Avvio del container
-
-```bash
-docker compose up dev -d
-```
-
-## 5. Entrare nel container
-
-```bash
-docker compose exec dev bash
-```
-
-Oppure, dalla root della repo, puoi usare direttamente:
-
-```bash
-robot dev
-```
-
-## 6. Verificare che le repo siano presenti
-
-Dentro il container:
-
-```bash
-ls /home/user
-```
-
-Dovresti vedere:
-
-```bash
-PoseEstimation
-eurobin
-shared_data
-```
-
-## 7. Rebuild dopo modifiche al Dockerfile
-
-Ogni volta che modifichi il `Dockerfile`, fai:
-
-```bash
-cd robot_docker
-docker compose down
-docker compose build --no-cache
+docker compose build --no-cache 
 docker compose up dev -d
 docker compose exec dev bash
-```
 
-## 8. Rebuild dopo modifiche al compose.yml
 
-Se modifichi solo `compose.yml`, spesso basta:
+### Instructions for running perception_docker 
+cd perception_docker
+docker compose build --no-cache perception
+docker compose up perception -d
+docker compose exec perception bash
 
-```bash
-cd robot_docker
-docker compose down
-docker compose up dev -d
-```
 
-Se hai cambiato anche build args, volumi importanti o Dockerfile, meglio:
+### Instructions for running Foundation Pose 
 
-```bash
-docker compose down
-docker compose build --no-cache
-docker compose up dev -d
-```
+ros2 launch realsense2_camera rs_launch.py
+ros2 run rqt_image_view rqt_image_view
+ros2 param set /head_cam align_depth.enable true
+python3 ~/PoseEstimation/pipeline/save_realsense_rgbd.py --capture_hz 30 --resize_width 640 --resize_height 360
+conda activate sam3
+python pipeline/sam_script_fp.py \
+  --data_root /workspace/shared_data/realsense \
+  --timestamp 2026-06-12_15-44-38 \
+  --prompt "box" \
+  --image_id 000000
+conda deactivate
+cd submodules/FoundationPose/
 
-## 9. Pulizia completa, solo se serve
 
-```bash
-cd robot_docker
-docker compose down --volumes --remove-orphans
-docker compose build --no-cache
-docker compose up dev -d
-```
-
-Comando più importante da ricordare:
-
-```bash
-source robot_profile.bash
-cd robot_docker
-docker compose build --no-cache
-docker compose up dev -d
-docker compose exec dev bash
-```
+python pipeline/run_fp_single_frame.py \
+  --data_root /workspace/shared_data/realsense \
+  --timestamp 2026-06-12_15-44-38\
+  --mesh_file /workspace/shared_data/realsense/meshes/box_amazon_model/meshes/box_amazon_model.obj \
+  --start_frame 000000 \
+  --max_frames 20 \
+  --est_refine_iter 5 \
+  --track_refine_iter 2 \
+  --debug 1
 
 
 
-### Instructions for perception_docker 
+### Instructions for running manipulation code 
+python homing_centauro.py
+python3 grasp_centauro_test.py --ros-args \
+      -p object_pose_file:=object_pose.txt \
+      -p base_frame:=pelvis \
+      -p camera_frame:=D435_head_camera_gz_optical_frame \
+      -p approach_mode:=yz \
+      -p grasp_offset_x:=-0.0 \
+      -p grasp_offset_y:=-0.05 \
+      -p grasp_offset_z:=0.0 \
+      -p phase1_split_fraction:=0.5 \
+      -p constrain_orientation:=true
+
+
+
