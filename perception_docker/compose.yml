@@ -10,7 +10,9 @@ services:
     network_mode: host
     volumes:
       - ../shared_data:/workspace/shared_data
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     environment:
+      - DISPLAY
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=all
     runtime: nvidia

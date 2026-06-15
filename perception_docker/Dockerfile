@@ -94,13 +94,13 @@ RUN conda run -n vlm python -m pip install --upgrade pip \
 # Comandi helper
 # =========================
 
-RUN echo '#!/usr/bin/env bash\nsource '${SAM3_CONDA_DIR}'/etc/profile.d/conda.sh\nconda activate sam3\ncd '${SAM3_DIR}'\nexec "$@"' > /usr/local/bin/run_sam3 \
+RUN printf '#!/usr/bin/env bash\nsource /opt/sam3-conda/etc/profile.d/conda.sh\nconda activate sam3\ncd /workspace/PoseEstimation/submodules/SAM3\nexec "$@"\n' > /usr/local/bin/run_sam3 \
     && chmod +x /usr/local/bin/run_sam3
 
-RUN echo '#!/usr/bin/env bash\ncd '${FOUNDATIONPOSE_DIR}'\nexec "$@"' > /usr/local/bin/run_foundationpose \
+RUN printf '#!/usr/bin/env bash\ncd /workspace/PoseEstimation/submodules/FoundationPose\nexec "$@"\n' > /usr/local/bin/run_foundationpose \
     && chmod +x /usr/local/bin/run_foundationpose
 
-RUN echo '#!/usr/bin/env bash\nsource '${SAM3_CONDA_DIR}'/etc/profile.d/conda.sh\nconda activate vlm\ncd '${EUROBIN_DIR}'\nexec "$@"' > /usr/local/bin/run_vlm \
+RUN printf '#!/usr/bin/env bash\nsource /opt/sam3-conda/etc/profile.d/conda.sh\nconda activate vlm\ncd /workspace/eurobin\nexec "$@"\n' > /usr/local/bin/run_vlm \
     && chmod +x /usr/local/bin/run_vlm
 
 WORKDIR ${POSE_ESTIMATION_DIR}
