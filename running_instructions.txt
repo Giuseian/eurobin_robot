@@ -1,6 +1,6 @@
 ### Instructions for running robot_docker 
 cd eurobin_robot 
-source robot_profile.bash 
+source robot_profile.bash
 cd robot_docker 
 robot dev   (which calls the setup.sh and directly calls the docker compose)
 
@@ -18,31 +18,38 @@ docker compose up perception -d
 docker compose exec perception bash
 
 
-### Instructions for running Foundation Pose 
+### Instructions for running Foundation Pose
 
 ros2 launch realsense2_camera rs_launch.py
 ros2 run rqt_image_view rqt_image_view
 ros2 param set /head_cam align_depth.enable true
-python3 ~/PoseEstimation/pipeline/save_realsense_rgbd.py --capture_hz 30 --resize_width 640 --resize_height 360
+python3 ~/PoseEstimation/pipeline/save_realsense_rgbd.py --capture_hz 30 --resize_width 640 --resize_height 360 --max_frames 1
+
 conda activate sam3
-python pipeline/sam_script_fp.py \
+
+hf auth login
+
+python /workspace/PoseEstimation/pipeline/sam_script_fp.py \
   --data_root /workspace/shared_data/realsense \
-  --timestamp 2026-06-12_15-44-38 \
+  --timestamp 2026-06-19_10-00-37 \
   --prompt "box" \
   --image_id 000000
 conda deactivate
 cd submodules/FoundationPose/
 
 
-python pipeline/run_fp_single_frame.py \
+python /workspace/PoseEstimation/pipeline/run_fp_single_frame.py \
   --data_root /workspace/shared_data/realsense \
-  --timestamp 2026-06-12_15-44-38\
+  --timestamp 2026-06-19_10-00-37\
   --mesh_file /workspace/shared_data/realsense/meshes/box_amazon_model/meshes/box_amazon_model.obj \
   --start_frame 000000 \
   --max_frames 20 \
   --est_refine_iter 5 \
   --track_refine_iter 2 \
   --debug 1
+  
+python /workspace/PoseEstimation/pipeline/run_fp_single_frame.py \
+  --max_frames 1
 
 
 

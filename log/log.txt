@@ -1,0 +1,1417 @@
+ecuzzocrea@iitavr002lw024u:~/eurobin_robot$ ./run_box_pipeline.py
+[1/8] Setting align_depth.enable...
+Waiting for node /head_cam to become available...
+WARNING: Be aware that there are nodes in the graph that share an exact name, which can have unintended side effects.
+Node /head_cam found.
+Set parameter successful
+
+############################################################
+# PIPELINE CYCLE 1/10
+############################################################
+
+[2/8] Capturing 1 RGB-D frame(s)...
+[INFO] [1782142004.638800081] [realsense_rgbd_data_saver]: Saving data to: /home/user/shared_data/realsense
+[INFO] [1782142004.639132194] [realsense_rgbd_data_saver]: Run timestamp: 2026-06-22_15-26-44
+[INFO] [1782142004.639416939] [realsense_rgbd_data_saver]: Capture rate: 30.000 Hz
+[INFO] [1782142004.639705851] [realsense_rgbd_data_saver]: RGB topic: /head_cam/color/image_raw
+[INFO] [1782142004.640047312] [realsense_rgbd_data_saver]: Depth topic: /head_cam/aligned_depth_to_color/image_raw
+[INFO] [1782142004.641248206] [realsense_rgbd_data_saver]: Camera info topic: /head_cam/color/camera_info
+[INFO] [1782142004.642144709] [realsense_rgbd_data_saver]: Capture mode: stop after 1 valid frame(s)
+[INFO] [1782142004.642464590] [realsense_rgbd_data_saver]: Saving resized frames: 640x360
+[WARN] [1782142004.661148833] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.694003237] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.727011309] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.760909100] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.794353912] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.827807692] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.860582224] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.894045310] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.927820913] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.960384070] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142004.993926304] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.027256842] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.060381873] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.094285286] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.127647943] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.160945599] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.194242523] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.227085945] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.260563979] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.293956463] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.327502875] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.360976120] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.394407437] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.427821119] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.460648582] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.493816383] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.527662268] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.560654090] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.594502539] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.627656586] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.660981212] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.694391169] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.727789303] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.761059076] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.794244480] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.827161572] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.861518746] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.894185116] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.927559256] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.961423064] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142005.994330517] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.027641458] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.060639440] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.093900617] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.127704943] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.161031754] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.194210276] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.227019564] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.260600712] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.294366406] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.327705759] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.361094916] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.394303585] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.427675920] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.460866925] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.494143631] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.528075498] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.561286260] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.594461145] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.633497082] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.661105748] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142006.693987573] [realsense_rgbd_data_saver]: Waiting for camera info...
+[WARN] [1782142006.727684858] [realsense_rgbd_data_saver]: Waiting for camera info...
+[INFO] [1782142006.754211403] [realsense_rgbd_data_saver]: Saved camera intrinsics to /home/user/shared_data/realsense/camera/2026-06-22_15-26-44/intrinsics.yaml
+[INFO] [1782142006.785726322] [realsense_rgbd_data_saver]: Saved frame 000000 | rgb=(720, 1280, 3), depth=(360, 640), depth_encoding=16UC1, rgb_depth_dt=0.0000s, depth_min=0.252, depth_max=4.880
+[INFO] [1782142006.786076860] [realsense_rgbd_data_saver]: Reached max_frames=1. Stop requested.
+[timestamp] Retrieving the latest timestamp from rgb/ ...
+Selected timestamp: 2026-06-22_15-26-44
+[check] Verifying RGB, depth, and camera data...
+RGB directory:
+total 328K
+drwxr-xr-x  2  1000  1000 4.0K Jun 22 08:26 .
+drwxrwxrwx 82 21476 50055 4.0K Jun 22 08:26 ..
+-rw-r--r--  1  1000  1000 319K Jun 22 08:26 000000.png
+Depth directory:
+total 16K
+drwxr-xr-x  4  1000  1000 4.0K Jun 22 08:26 .
+drwxrwxrwx 83 21476 50055 4.0K Jun 22 08:26 ..
+drwxr-xr-x  2  1000  1000 4.0K Jun 22 08:26 npy
+drwxr-xr-x  2  1000  1000 4.0K Jun 22 08:26 png
+Camera directory:
+total 12K
+drwxr-xr-x  2  1000  1000 4.0K Jun 22 08:26 .
+drwxrwxrwx 83 21476 50055 4.0K Jun 22 08:26 ..
+-rw-r--r--  1  1000  1000  621 Jun 22 08:26 intrinsics.yaml
+
+[preview] Cycle 1 - captured RGB image
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-26-44_000000_cycle_1_rgb.png
+
+[cycle 1] Continue with VLM scene perception? [y/N]: y
+Continuing...
+[3/8] Running VLM scene perception...
+
+======================================================
+LIVE1 | SCENE PERCEPTION ONLY
+Scenario:        centauro
+Image:           /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+Realsense ts:    2026-06-22_15-26-44
+Loop timestamp:  2026-06-22_08-26-55
+======================================================
+[OK][scene_description] Prompt saved to:         /workspace/eurobin/prompts_scenarios/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/prompt.txt
+[OK][scene_description] Parsed output saved to:  /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/response_parsed.json
+[OK][scene_description] Run info saved to:       /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/run_info.json
+[OK][scene_description] Scene object list saved: /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/scene_object_list.json
+[OK][scene_description] Execution time:          8.544s
+
+[scene_description] Parsed JSON:
+{
+  "scene_description": {
+    "objects": [
+      {
+        "name": "box_1",
+        "category": "box",
+        "color": "red"
+      },
+      {
+        "name": "box_2",
+        "category": "box",
+        "color": "brown"
+      }
+    ],
+    "end_effectors": [
+      {
+        "name": "end_effector_left",
+        "grasping": "nothing"
+      },
+      {
+        "name": "end_effector_right",
+        "grasping": "nothing"
+      }
+    ],
+    "spatial_relationships": [
+      {
+        "subject": "box_1",
+        "relation": "on top of",
+        "object": "box_2"
+      }
+    ]
+  }
+}
+
+[OK][live1] Scene perception completed.
+[OK][live1] Objects found:       box_1, box_2
+[OK][live1] SAM3 prompts saved:  /workspace/shared_data/realsense/objects/2026-06-22_15-26-44/sam3_prompts.json
+[OK][live1] Response parsed:     /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/response_parsed.json
+[OK][live1] Scene object list:   /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/scene_object_list.json
+
+[vlm] Objects file:
+      /workspace/shared_data/realsense/objects/2026-06-22_15-26-44/sam3_prompts.json
+[vlm] Copied objects file:
+      /tmp/box_pipeline_preview/2026-06-22_15-26-44_vlm_objects.txt
+[vlm] Parsed objects:
+      [1] object_id": "box_1",
+      [2] prompt": "red box",
+      [3] category": "box",
+      [4] color": "red
+      [5] },
+      [6] object_id": "box_2",
+      [7] prompt": "brown box",
+      [8] color": "brown
+      [9] }
+      [10] ]
+
+[cycle 1] Detected objects:
+  [1] object_id": "box_1",
+  [2] prompt": "red box",
+  [3] category": "box",
+  [4] color": "red
+  [5] },
+  [6] object_id": "box_2",
+  [7] prompt": "brown box",
+  [8] color": "brown
+  [9] }
+  [10] ]
+
+[cycle 1] Continue with SAM3 multi-object segmentation? [y/N]: y
+Continuing...
+[4/8] Running SAM3 multi-object segmentation...
+/workspace/PoseEstimation/submodules/SAM3/sam3/model_builder.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/opt/conda/envs/sam3/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+[SAM3] Starting SAM3 segmentation script
+[SAM3] CUDA is available
+[SAM3] SAM3 root: /workspace/PoseEstimation/submodules/SAM3
+[SAM3] BPE path: /workspace/PoseEstimation/submodules/SAM3/sam3/assets/bpe_simple_vocab_16e6.txt.gz
+[SAM3] Timestamp: 2026-06-22_15-26-44
+[SAM3] Prompts file: /workspace/shared_data/realsense/objects/2026-06-22_15-26-44/sam3_prompts.json
+[SAM3] Prompt records: [{'object_id': 'box_1', 'prompt': 'red box', 'category': 'box', 'color': 'red'}, {'object_id': 'box_2', 'prompt': 'brown box', 'category': 'box', 'color': 'brown'}]
+[SAM3] Output root: /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44
+[SAM3] Processing /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+[SAM3] Prompt: 'red box' -> object_id=box_1
+[SAM3] Saved mask to /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_1/000000.png
+[SAM3] Prompt: 'brown box' -> object_id=box_2
+[SAM3] Saved mask to /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_2/000000.png
+[SAM3] Done
+
+[cycle 1] SAM3 masks generated for:
+
+[error] Captured stderr:
+Error: none of the expected timestamp directories exists:
+  /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44
+  /workspace/shared_data/realsense/outputs_by_objects/2026-06-22_15-26-44
+
+  [1] box 1  (box_1)
+
+[error] Captured stderr:
+Error: none of the expected timestamp directories exists:
+  /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44
+  /workspace/shared_data/realsense/outputs_by_objects/2026-06-22_15-26-44
+
+  [2] box 2  (box_2)
+
+[error] Captured stderr:
+Error: none of the expected timestamp directories exists:
+  /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44
+  /workspace/shared_data/realsense/outputs_by_objects/2026-06-22_15-26-44
+
+
+[preview] Cycle 1 - SAM3 mask for object: box 1
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_1/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_1_000000_cycle_1_mask.png
+
+[error] Captured stderr:
+Error: none of the expected timestamp directories exists:
+  /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44
+  /workspace/shared_data/realsense/outputs_by_objects/2026-06-22_15-26-44
+
+
+[preview] Cycle 1 - SAM3 mask for object: box 2
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_2/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_2_000000_cycle_1_mask.png
+
+[cycle 1] Are the SAM3 masks acceptable? [y/N]: y
+Continuing...
+[5/8] Running FoundationPose multi-object pose estimation...
+Active environment for FoundationPose:
+CONDA_DEFAULT_ENV=my
+Python interpreter for FoundationPose:
+/opt/conda/envs/my/bin/python
+Checking cv2 import...
+cv2 OK 4.9.0
+Warp 1.0.0 initialized:
+   CUDA Toolkit 11.5, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA RTX A1000 6GB Laptop GPU" (6 GiB, sm_86, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.0.0
+[FP] Data root: /workspace/shared_data/realsense
+[FP] Timestamp: 2026-06-22_15-26-44
+[FP] Intrinsics: /workspace/shared_data/realsense/camera/2026-06-22_15-26-44/intrinsics.yaml
+[FP] Output root: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44
+[__init__()] self.cfg: 
+ lr: 0.0001
+c_in: 6
+zfar: 'Infinity'
+debug: null
+n_view: 1
+run_id: 3wy8qqex
+use_BN: true
+exp_name: 2024-01-11-20-02-45
+n_epochs: 62
+save_dir: /home/bowenw/debug/2024-01-11-20-02-45/
+use_mask: false
+loss_type: pairwise_valid
+optimizer: adam
+batch_size: 64
+crop_ratio: 1.1
+enable_amp: true
+use_normal: false
+max_num_key: null
+warmup_step: -1
+input_resize:
+- 160
+- 160
+max_step_val: 1000
+vis_interval: 1000
+weight_decay: 0
+normalize_xyz: true
+resume_run_id: null
+clip_grad_norm: 'Infinity'
+lr_epoch_decay: 500
+render_backend: nvdiffrast
+train_num_pair: 5
+lr_decay_epochs:
+- 50
+n_epochs_warmup: 1
+make_pair_online: false
+gradient_max_norm: 'Infinity'
+max_step_per_epoch: 10000
+n_rendering_workers: 1
+save_epoch_interval: 100
+n_dataloader_workers: 100
+split_objects_across_gpus: true
+ckpt_dir: /workspace/PoseEstimation/submodules/FoundationPose/learning/training/../../weights/2024-01-11-20-02-45/model_best.pth
+
+[__init__()] self.h5_file:None
+[__init__()] Using pretrained model from /workspace/PoseEstimation/submodules/FoundationPose/learning/training/../../weights/2024-01-11-20-02-45/model_best.pth
+[__init__()] init done
+[__init__()] welcome
+[__init__()] self.cfg: 
+ lr: 0.0001
+c_in: 6
+zfar: .inf
+debug: null
+w_rot: 0.1
+n_view: 1
+run_id: null
+use_BN: true
+rot_rep: axis_angle
+ckpt_dir: /workspace/PoseEstimation/submodules/FoundationPose/learning/training/../../weights/2023-10-28-18-33-37/model_best.pth
+exp_name: 2023-10-28-18-33-37
+save_dir: /tmp/2023-10-28-18-33-37/
+loss_type: l2
+optimizer: adam
+trans_rep: tracknet
+batch_size: 64
+crop_ratio: 1.2
+use_normal: false
+BN_momentum: 0.1
+max_num_key: null
+warmup_step: -1
+input_resize:
+- 160
+- 160
+max_step_val: 1000
+normal_uint8: false
+vis_interval: 1000
+weight_decay: 0
+n_max_objects: null
+normalize_xyz: true
+clip_grad_norm: 'Infinity'
+rot_normalizer: 0.3490658503988659
+trans_normalizer:
+- 0.019999999552965164
+- 0.019999999552965164
+- 0.05000000074505806
+max_step_per_epoch: 25000
+val_epoch_interval: 10
+n_dataloader_workers: 60
+enable_amp: true
+use_mask: false
+
+[__init__()] self.h5_file:
+[__init__()] Using pretrained model from /workspace/PoseEstimation/submodules/FoundationPose/learning/training/../../weights/2023-10-28-18-33-37/model_best.pth
+[__init__()] init done
+[FP] Processing 1 frames
+[FP] First frame: 000000
+[FP] Last frame: 000000
+[FP] Objects: box_1, box_2
+
+======================================================
+[FP] Select CAD mesh for object: box_1
+  1. meshes/box_amazon_model/meshes/box_amazon_model.obj
+  2. meshes/box_big/box_big.obj
+Insert a number from the list, or insert a mesh path.
+CAD for box_1: 1
+[FP] Selected mesh for box_1: /workspace/shared_data/realsense/meshes/box_amazon_model/meshes/box_amazon_model.obj
+
+======================================================
+[FP] Select CAD mesh for object: box_2
+  1. meshes/box_amazon_model/meshes/box_amazon_model.obj
+  2. meshes/box_big/box_big.obj
+Insert a number from the list, or insert a mesh path.
+CAD for box_2: 2
+[FP] Selected mesh for box_2: /workspace/shared_data/realsense/meshes/box_big/box_big.obj
+
+[FP] Loading frame: 000000
+
+======================================================
+[FP] Object: box_1
+[FP] Initial mask: /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_1/000000.png
+[FP] Mesh: /workspace/shared_data/realsense/meshes/box_amazon_model/meshes/box_amazon_model.obj
+======================================================
+[reset_object()] self.diameter:0.2892147731983824, vox_size:0.01446073865991912
+[reset_object()] self.pts:torch.Size([14, 3])
+[reset_object()] reset done
+[make_rotation_grid()] cam_in_obs:(42, 4, 4)
+[make_rotation_grid()] rot_grid:(252, 4, 4)
+num original candidates = 252
+num of pose after clustering: 252
+[make_rotation_grid()] after cluster, rot_grid:(252, 4, 4)
+[make_rotation_grid()] self.rot_grid: torch.Size([252, 4, 4])
+
+[FP][box_1] Frame 1/1: 000000
+[FP][box_1] Running initial registration
+[register()] Welcome
+Module Utils load on device 'cuda:0' took 5.16 ms
+[register()] poses:(252, 4, 4)
+[register()] after viewpoint, add_errs min:-1.0
+[predict()] ob_in_cams:(252, 4, 4)
+[predict()] self.cfg.use_normal:False
+[predict()] trans_normalizer:[0.019999999552965164, 0.019999999552965164, 0.05000000074505806], rot_normalizer:0.3490658503988659
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] ob_in_cams:(252, 4, 4)
+[predict()] self.cfg.use_normal:False
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] pose batch data done
+[find_best_among_pairs()] pose_data.rgbAs.shape[0]: 252
+[predict()] forward done
+[register()] final, add_errs min:-1.0
+[register()] sort ids:tensor([ 24,  30,  59,  96, 107, 108, 181, 191, 239,  84,  90, 102, 111, 241,
+        117, 123, 138, 158, 214,  38,  39,  45, 129, 135, 141, 166, 218,  44,
+         71,  35,  89,  29,  50, 118, 136,  62,  58,  11,  49, 152,   2,   0,
+         70, 173,  18,  52, 126, 174, 199, 221,   6,  17,  20,  72,  78, 131,
+        132, 163, 171, 177, 233,  12,  15,  27,  36,  42,  61,  86, 104, 114,
+        120, 125, 161, 184, 200, 222, 224,   1,   3,   9,  21,  64,  68,  75,
+         81,  87,  93, 105, 128, 144, 147, 151, 172, 204, 209, 223, 236, 244,
+        247,  32,  33,  99, 149, 188, 196, 198, 211, 225, 231,  10, 193, 197,
+        207, 248,  41,  47,  53,  56,  65, 122, 148, 150, 175, 176, 194, 250,
+         82, 208, 251,  16,  22, 232,  19, 179, 180,  26,  73, 103,  23,  76,
+         91,  94, 101, 124, 154,  95,  97, 106, 127,  37, 155,   7,  28,  43,
+         55,  85,  88,  92,  98, 170, 227,   8,  13, 119, 130, 133, 178, 246,
+         25,  31,  60,  67, 100, 109, 112, 134, 146, 226, 230, 249,   4,   5,
+         40,  46,  51,  57,  66,  69,  77, 116, 121, 137, 145, 169, 183, 192,
+        202,  48,  54,  63,  79,  83, 139, 142, 203,  34,  74,  80, 164, 206,
+        210, 229,  14, 162, 168, 185, 190, 205, 243, 115, 153, 157, 195, 212,
+        140, 156, 189, 237, 238, 143, 182, 216, 228, 234, 240, 242, 110, 159,
+        165, 186, 213, 245, 113, 167, 201, 215, 219, 187, 235, 160, 220, 217])
+[register()] sorted scores:tensor([58.1562, 58.1562, 58.1562, 58.1562, 58.1562, 58.1562, 58.1562, 58.1562,
+        58.1562, 58.1250, 58.1250, 58.1250, 58.1250, 58.1250, 58.0938, 58.0938,
+        58.0938, 58.0938, 58.0938, 58.0625, 58.0625, 58.0625, 58.0625, 58.0625,
+        58.0625, 58.0625, 58.0625, 58.0312, 58.0000, 57.9375, 57.9375, 57.8438,
+        57.6250, 57.6250, 57.5938, 57.5312, 57.5000, 57.4688, 57.4688, 57.4688,
+        57.4375, 57.3750, 57.3750, 57.3750, 57.3438, 57.3438, 57.3438, 57.3438,
+        57.3438, 57.3438, 57.3125, 57.3125, 57.3125, 57.3125, 57.3125, 57.3125,
+        57.3125, 57.3125, 57.3125, 57.3125, 57.3125, 57.2812, 57.2812, 57.2812,
+        57.2812, 57.2812, 57.2812, 57.2812, 57.2812, 57.2812, 57.2812, 57.2812,
+        57.2812, 57.2812, 57.2812, 57.2812, 57.2812, 57.2500, 57.2500, 57.2500,
+        57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500,
+        57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500, 57.2500,
+        57.2500, 57.2500, 57.2500, 57.2188, 57.2188, 57.2188, 57.2188, 57.2188,
+        57.2188, 57.2188, 57.2188, 57.2188, 57.2188, 57.1875, 57.1875, 57.1875,
+        57.1875, 57.1875, 57.1562, 57.1562, 57.1562, 57.1562, 57.1562, 57.1562,
+        57.1562, 57.1562, 57.1562, 57.1562, 57.1562, 57.1562, 57.1250, 57.1250,
+        57.1250, 57.0938, 57.0938, 57.0938, 57.0625, 57.0625, 57.0625, 57.0312,
+        57.0312, 57.0000, 56.9688, 56.9688, 56.9688, 56.9688, 56.9688, 56.9688,
+        56.9688, 56.9375, 56.9375, 56.9375, 56.9375, 56.9062, 56.9062, 56.8750,
+        56.8750, 56.8750, 56.8750, 56.8750, 56.8750, 56.8750, 56.8750, 56.8750,
+        56.8750, 56.8438, 56.8438, 56.8438, 56.8438, 56.8438, 56.8438, 56.8438,
+        56.8125, 56.8125, 56.8125, 56.8125, 56.8125, 56.8125, 56.8125, 56.8125,
+        56.8125, 56.8125, 56.8125, 56.8125, 56.7812, 56.7812, 56.7812, 56.7812,
+        56.7812, 56.7812, 56.7812, 56.7812, 56.7812, 56.7812, 56.7812, 56.7812,
+        56.7812, 56.7812, 56.7812, 56.7812, 56.7812, 56.7500, 56.7500, 56.7500,
+        56.7500, 56.7500, 56.7500, 56.7500, 56.7500, 56.7188, 56.7188, 56.7188,
+        56.7188, 56.7188, 56.7188, 56.7188, 56.6875, 56.6875, 56.6875, 56.6875,
+        56.6875, 56.6875, 56.6875, 56.6562, 56.6562, 56.6562, 56.6562, 56.6562,
+        56.6250, 56.6250, 56.6250, 56.6250, 56.6250, 56.5938, 56.5938, 56.5938,
+        56.5938, 56.5938, 56.5938, 56.5938, 56.5625, 56.5625, 56.5625, 56.5625,
+        56.5625, 56.5625, 56.5312, 56.5312, 56.5312, 56.5312, 56.5312, 56.5000,
+        56.5000, 56.4688, 56.4688, 56.4375])
+[FP] Saved pose: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_1/ob_in_cam/000000.txt
+[FP] Saved visualization: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_1/vis/000000.png
+
+======================================================
+[FP] Object: box_2
+[FP] Initial mask: /workspace/shared_data/realsense/masks_by_object/2026-06-22_15-26-44/box_2/000000.png
+[FP] Mesh: /workspace/shared_data/realsense/meshes/box_big/box_big.obj
+======================================================
+[reset_object()] self.diameter:0.5094609890988797, vox_size:0.025473049454943986
+[reset_object()] self.pts:torch.Size([16, 3])
+[reset_object()] reset done
+[make_rotation_grid()] cam_in_obs:(42, 4, 4)
+[make_rotation_grid()] rot_grid:(252, 4, 4)
+num original candidates = 252
+num of pose after clustering: 252
+[make_rotation_grid()] after cluster, rot_grid:(252, 4, 4)
+[make_rotation_grid()] self.rot_grid: torch.Size([252, 4, 4])
+
+[FP][box_2] Frame 1/1: 000000
+[FP][box_2] Running initial registration
+[register()] Welcome
+[register()] poses:(252, 4, 4)
+[register()] after viewpoint, add_errs min:-1.0
+[predict()] ob_in_cams:(252, 4, 4)
+[predict()] self.cfg.use_normal:False
+[predict()] trans_normalizer:[0.019999999552965164, 0.019999999552965164, 0.05000000074505806], rot_normalizer:0.3490658503988659
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] warp done
+[make_crop_data_batch()] pose batch data done
+[predict()] forward start
+[predict()] forward done
+[predict()] ob_in_cams:(252, 4, 4)
+[predict()] self.cfg.use_normal:False
+[predict()] making cropped data
+[make_crop_data_batch()] Welcome make_crop_data_batch
+[make_crop_data_batch()] make tf_to_crops done
+[make_crop_data_batch()] render done
+[make_crop_data_batch()] pose batch data done
+[find_best_among_pairs()] pose_data.rgbAs.shape[0]: 252
+[predict()] forward done
+[register()] final, add_errs min:-1.0
+[register()] sort ids:tensor([ 90,  96,  24,  30, 108, 111, 181, 191, 239, 241, 117,  39, 135, 138,
+        141, 166, 158, 214, 218,  45, 123, 129,  25,  31, 149, 196, 209, 173,
+        233, 250, 208, 247, 148,  10, 152, 193, 175, 223, 200,  38,  46,  16,
+         44, 224,  35,  40,   1, 176,  11,  17,  29,  56,  65,  19,  84, 197,
+         68, 194, 248, 251,  53, 199, 102, 151, 168, 172, 174,  20, 228,   2,
+         49, 222, 232,  61, 122, 128, 182, 201,  91, 153, 167, 242,  97, 215,
+         59, 107,  71,  89, 127, 121,  70, 118, 136,  58, 106,  88,  26,  32,
+         77, 154, 202,  14,  74,  80,  23,  27,  83, 119, 137, 238,   5,   8,
+         33,  93, 105,   0,  41,  42,  47,  48,  87,  95, 132, 150, 184, 190,
+        204, 206, 227, 230, 244,  18,  36,  57,  73,  79,  92,  98,  99, 101,
+        114, 120, 126, 130, 134, 144, 146, 170, 211,   3,   6,  21,  22,  76,
+         81,  85, 103, 115, 116, 124, 133, 147, 207,   4,  15,  60,  69,  72,
+         75,  82,  94, 100, 155, 163, 169, 179, 188, 203, 217, 225, 231, 236,
+          9,  12,  13,  78, 157, 178, 198, 226, 229, 249,   7, 109, 112, 195,
+        125, 131, 145, 161, 171, 177, 183, 192, 205, 243,  55, 221, 246,  50,
+         52,  62,  67,  86, 139, 142, 162, 210,  64, 104, 180, 186, 234, 237,
+        240, 156, 185, 189, 219, 110, 113, 159, 187, 216, 235, 245,  28,  34,
+        213, 220,  43, 140, 143, 160, 165,  37, 164,  51, 212,  63,  66,  54])
+[register()] sorted scores:tensor([71.3438, 71.3438, 71.3281, 71.3281, 71.3281, 71.3281, 71.3281, 71.3281,
+        71.3281, 71.3125, 71.2812, 71.2656, 71.2656, 71.2656, 71.2656, 71.2656,
+        71.2500, 71.2500, 71.2500, 71.2344, 71.2344, 71.2344, 71.0781, 71.0312,
+        71.0000, 71.0000, 71.0000, 70.9844, 70.9844, 70.9844, 70.9219, 70.9219,
+        70.9062, 70.8906, 70.8906, 70.8906, 70.8750, 70.8594, 70.8438, 70.8281,
+        70.8281, 70.8125, 70.8125, 70.7969, 70.7656, 70.7656, 70.7500, 70.7500,
+        70.7188, 70.7188, 70.7188, 70.6719, 70.6719, 70.6562, 70.6562, 70.6562,
+        70.6406, 70.6250, 70.6250, 70.6250, 70.6094, 70.6094, 70.5938, 70.5938,
+        70.5625, 70.5625, 70.5625, 70.5469, 70.5469, 70.5156, 70.5156, 70.5156,
+        70.5156, 70.5000, 70.4844, 70.4844, 70.4844, 70.4844, 70.4688, 70.4688,
+        70.4688, 70.4688, 70.4531, 70.4531, 70.4375, 70.4375, 70.4219, 70.4219,
+        70.4062, 70.3906, 70.3438, 70.3281, 70.3281, 70.2969, 70.2969, 70.2812,
+        70.2344, 70.2031, 70.1875, 70.1875, 70.1875, 70.1719, 70.1719, 70.1719,
+        70.1562, 70.1562, 70.1562, 70.1562, 70.1562, 70.1562, 70.1406, 70.1406,
+        70.1406, 70.1406, 70.1406, 70.1250, 70.1250, 70.1250, 70.1250, 70.1250,
+        70.1250, 70.1250, 70.1250, 70.1250, 70.1250, 70.1250, 70.1250, 70.1250,
+        70.1250, 70.1250, 70.1250, 70.1094, 70.1094, 70.1094, 70.1094, 70.1094,
+        70.1094, 70.1094, 70.1094, 70.1094, 70.1094, 70.1094, 70.1094, 70.1094,
+        70.1094, 70.1094, 70.1094, 70.1094, 70.1094, 70.0938, 70.0938, 70.0938,
+        70.0938, 70.0938, 70.0938, 70.0938, 70.0938, 70.0938, 70.0938, 70.0938,
+        70.0938, 70.0938, 70.0938, 70.0781, 70.0781, 70.0781, 70.0781, 70.0781,
+        70.0781, 70.0781, 70.0781, 70.0781, 70.0781, 70.0781, 70.0781, 70.0781,
+        70.0781, 70.0781, 70.0781, 70.0781, 70.0781, 70.0781, 70.0625, 70.0625,
+        70.0625, 70.0625, 70.0625, 70.0625, 70.0625, 70.0625, 70.0625, 70.0625,
+        70.0469, 70.0469, 70.0469, 70.0469, 70.0312, 70.0312, 70.0312, 70.0312,
+        70.0312, 70.0312, 70.0312, 70.0312, 70.0312, 70.0312, 70.0156, 70.0156,
+        70.0156, 70.0000, 70.0000, 70.0000, 70.0000, 70.0000, 70.0000, 70.0000,
+        70.0000, 70.0000, 69.9844, 69.9844, 69.9688, 69.9688, 69.9688, 69.9531,
+        69.9531, 69.9375, 69.9375, 69.9375, 69.9375, 69.9219, 69.9219, 69.9219,
+        69.9219, 69.9219, 69.9219, 69.9219, 69.9062, 69.9062, 69.9062, 69.9062,
+        69.8906, 69.8906, 69.8906, 69.8906, 69.8906, 69.8750, 69.8750, 69.8594,
+        69.8594, 69.8438, 69.8281, 69.8125])
+[FP] Saved pose: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_2/ob_in_cam/000000.txt
+[FP] Saved visualization: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_2/vis/000000.png
+[FP] Saved poses JSON: /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/poses.json
+
+[FP] Multi-object sequence processing completed
+
+[cycle 1] FoundationPose outputs generated for:
+  [1] box 1  (box_1)
+  [2] box 2  (box_2)
+
+============================================================
+ Cycle 1 - FoundationPose result 1/2: box 1
+============================================================
+
+[preview] Cycle 1 - FoundationPose output for object: box 1
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_1/vis/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_1_000000_cycle_1_foundationpose_vis.png
+
+[pose] Reading FoundationPose output:
+       /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_1/ob_in_cam/000000.txt
+
+==========================================
+ Object position in camera frame
+==========================================
+ x = 0.058515 m   right
+ y = -0.087962 m   down
+ z = 0.672872 m   depth
+==========================================
+
+==========================================
+ Position to write for manipulation
+==========================================
+ object.position: 0.672872 0.058515 0.087962
+
+ mapping:
+   first term  = z
+   second term = x
+   third term  = -y
+==========================================
+
+[pose] Pose file copied to host:
+       /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_1_000000_cycle_1_ob_in_cam.txt
+
+============================================================
+ Cycle 1 - FoundationPose result 2/2: box 2
+============================================================
+
+[preview] Cycle 1 - FoundationPose output for object: box 2
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_2/vis/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_2_000000_cycle_1_foundationpose_vis.png
+
+[pose] Reading FoundationPose output:
+       /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/box_2/ob_in_cam/000000.txt
+
+==========================================
+ Object position in camera frame
+==========================================
+ x = 0.069034 m   right
+ y = 0.012250 m   down
+ z = 0.777685 m   depth
+==========================================
+
+==========================================
+ Position to write for manipulation
+==========================================
+ object.position: 0.777685 0.069034 -0.012250
+
+ mapping:
+   first term  = z
+   second term = x
+   third term  = -y
+==========================================
+
+[pose] Pose file copied to host:
+       /tmp/box_pipeline_preview/2026-06-22_15-26-44_box_2_000000_cycle_1_ob_in_cam.txt
+
+[cycle 1] Are the FoundationPose outputs acceptable? [y/N]: y
+Continuing...
+
+[cycle 1] Continue with VLM task planning and validation with automatic frame capture? [y/N]: y
+Continuing...
+[6/8] Running VLM task planning, simulation, and validation...
+[6/8] Manual action pause is enabled.
+[6/8] When live2 waits for a new Realsense frame, this pipeline will pause.
+[6/8] After your manual manipulation, press 'y' to capture the next frame.
+
+======================================================
+LIVE2 | CONTINUE FROM LATEST SCENE PERCEPTION
+Scenario:                    centauro
+Image:                       /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+Realsense timestamp:         2026-06-22_15-26-44
+Poses file:                  /workspace/shared_data/realsense/outputs_by_object/2026-06-22_15-26-44/poses.json
+Poses timestamp:             2026-06-22_15-26-44
+Loaded scene response:       /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/response_parsed.json
+Task:                        Grasp the brown box. Be careful, the red box is very fragile.
+Loop timestamp from live1:   2026-06-22_08-26-55
+Cycle from live1:            cycle_001
+Replanning policy:           stop on first validation failure
+======================================================
+
+[DEBUG] Pose source: static
+[DEBUG] Static pose file: /tmp/tmpqa9no8pq.json
+[DEBUG] Direct pose lookup: scene perception names must match pose keys.
+[OK][scene_description_full] Image key used:       000000.png
+[OK][scene_description_full] Parsed output saved to: /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/scene_description_full.json
+[OK][scene_description_full] Run info saved to:      /workspace/eurobin/outputs/scene_description/centauro/v6/2026-06-22_08-26-55/gpt-5.2/cycle_001/scene_description_full_run_info.json
+[OK][scene_description_full] Execution time:         0.000s
+
+[scene_description_full] Parsed JSON:
+{
+  "scene_description": {
+    "objects": [
+      {
+        "name": "box_1",
+        "category": "box",
+        "color": "red",
+        "location": "zone B",
+        "sides": {
+          "left": "accessible",
+          "right": "accessible",
+          "front": "accessible",
+          "back": "not reachable",
+          "top": "accessible",
+          "bottom": "blocked by box_2"
+        }
+      },
+      {
+        "name": "box_2",
+        "category": "box",
+        "color": "brown",
+        "location": "zone B",
+        "sides": {
+          "left": "accessible",
+          "right": "accessible",
+          "front": "accessible",
+          "back": "not reachable",
+          "top": "blocked by box_1",
+          "bottom": "blocked by the table"
+        }
+      }
+    ],
+    "end_effectors": [
+      {
+        "name": "end_effector_left",
+        "grasping": "nothing"
+      },
+      {
+        "name": "end_effector_right",
+        "grasping": "nothing"
+      }
+    ],
+    "spatial_relationships": [
+      {
+        "subject": "box_1",
+        "relation": "on top of",
+        "object": "box_2"
+      }
+    ]
+  }
+}
+[OK][vlm_planning] Prompt saved to:        /workspace/eurobin/prompts_scenarios/vlm_planning/centauro/v5/2026-06-22_08-26-55/o3/cycle_001/prompt.txt
+[OK][vlm_planning] Parsed output saved to: /workspace/eurobin/outputs/vlm_planning/centauro/v5/2026-06-22_08-26-55/o3/cycle_001/response_parsed.json
+[OK][vlm_planning] Run info saved to:      /workspace/eurobin/outputs/vlm_planning/centauro/v5/2026-06-22_08-26-55/o3/cycle_001/run_info.json
+[OK][vlm_planning] Execution time:         9.441s
+
+[vlm_planning] Parsed JSON:
+[
+  {
+    "Step_id": 1,
+    "Target": "box_1",
+    "Action concept": "Grasp",
+    "Manipulation mode": "Dual-arm symmetric",
+    "Contact mode": "Without claw",
+    "Object contact side": "right & left"
+  },
+  {
+    "Step_id": 2,
+    "Target": "Table",
+    "Action concept": "Place",
+    "Manipulation mode": "Dual-arm symmetric",
+    "Contact mode": "Without claw",
+    "Object contact side": "Top"
+  },
+  {
+    "Step_id": 3,
+    "Target": "box_2",
+    "Action concept": "Grasp",
+    "Manipulation mode": "Dual-arm symmetric",
+    "Contact mode": "Without claw",
+    "Object contact side": "right & left"
+  }
+]
+[OK][simultaneous_actions] Prompt saved to:        /workspace/eurobin/prompts_scenarios/simultaneous_actions/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/prompt.txt
+[OK][simultaneous_actions] Parsed output saved to: /workspace/eurobin/outputs/simultaneous_actions/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/response_parsed.json
+[OK][simultaneous_actions] Run info saved to:      /workspace/eurobin/outputs/simultaneous_actions/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/run_info.json
+[OK][simultaneous_actions] Execution time:         3.651s
+
+[simultaneous_actions] Parsed JSON:
+[
+  {
+    "Stage_id": 1,
+    "Step_id": [
+      1
+    ],
+    "Precondition": "Both end effectors empty; box_1 accessible on sides; red box remains handled gently.",
+    "Postcondition": "box_1 grasped with dual arms; red box remains intact."
+  },
+  {
+    "Stage_id": 2,
+    "Step_id": [
+      2
+    ],
+    "Precondition": "box_1 grasped; placement area on table available; red box remains handled gently.",
+    "Postcondition": "box_1 placed on table; box_2 top unblocked; red box remains intact."
+  },
+  {
+    "Stage_id": 3,
+    "Step_id": [
+      3
+    ],
+    "Precondition": "Both end effectors empty; box_2 accessible on sides; red box remains intact.",
+    "Postcondition": "box_2 grasped with dual arms; red box remains intact."
+  }
+]
+
+[LOOP] Stage 1 PRE
+[LOOP] PRE image:      /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+[LOOP] PRE condition:  Both end effectors empty; box_1 accessible on sides; red box remains handled gently.
+
+[DEBUG][validator-pre-stage-1] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-26-44/000000.png
+[DEBUG][validator-pre-stage-1] Image key:  000000.png
+[DEBUG][validator-pre-stage-1] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:pre_1] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/pre/prompt.txt
+[OK][validator:pre_1] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/pre/response_parsed.json
+[OK][validator:pre_1] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/pre/run_info.json
+[OK][validator:pre_1] Execution time:         4.900s
+
+[PRE validator:pre_1] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "No end-effectors are visible, so they are assumed empty. The red box (box_1) is present and not being grasped; its side faces appear unobstructed (only its bottom is in contact with the brown box). Nothing indicates rough handling of the red box."
+}
+[LOOP] PRE result:     matching
+[LOOP] PRE reason:     No end-effectors are visible, so they are assumed empty. The red box (box_1) is present and not being grasped; its side faces appear unobstructed (only its bottom is in contact with the brown box). Nothing indicates rough handling of the red box.
+
+[LOOP] Stage 1 ACTION
+[LOOP] Execute the robot action now, then save a new frame from the other docker.
+[LOOP] Waiting for a new Realsense frame newer than 2026-06-22_15-26-44...
+
+============================================================
+[manual-action] live2 requested a new Realsense frame #1.
+[manual-action] The pipeline is paused before capturing.
+============================================================
+
+============================================================
+[manual-action] PRE condition has been evaluated.
+[manual-action] live2 is now waiting for a new Realsense frame.
+[manual-action] Execute the manual robot manipulation now.
+[manual-action] When the action is finished, type 'y' and press Enter.
+============================================================
+
+Capture a new RGB-D frame now and continue live2? [y/N]: y
+[manual-action] Continuing with new frame capture...
+
+============================================================
+[auto-capture] Capturing RGB-D frame #1 from robot_docker...
+============================================================
+[2/8] Capturing 1 RGB-D frame(s)...
+[INFO] [1782142340.053223602] [realsense_rgbd_data_saver]: Saving data to: /home/user/shared_data/realsense
+[INFO] [1782142340.053608564] [realsense_rgbd_data_saver]: Run timestamp: 2026-06-22_15-32-20
+[INFO] [1782142340.053918587] [realsense_rgbd_data_saver]: Capture rate: 30.000 Hz
+[INFO] [1782142340.054209005] [realsense_rgbd_data_saver]: RGB topic: /head_cam/color/image_raw
+[INFO] [1782142340.054511354] [realsense_rgbd_data_saver]: Depth topic: /head_cam/aligned_depth_to_color/image_raw
+[INFO] [1782142340.054814705] [realsense_rgbd_data_saver]: Camera info topic: /head_cam/color/camera_info
+[INFO] [1782142340.055128735] [realsense_rgbd_data_saver]: Capture mode: stop after 1 valid frame(s)
+[INFO] [1782142340.056972064] [realsense_rgbd_data_saver]: Saving resized frames: 640x360
+[WARN] [1782142340.075015771] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.108085305] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.141958504] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.174695002] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.207798539] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.241856590] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.275155678] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.308463342] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.341972599] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.374769669] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.408482832] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.441618638] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.474620026] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.508105669] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.541779049] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.575022244] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.607924177] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.641412836] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.674767828] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.708551582] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.741868463] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.775208897] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.808662171] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.841866455] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.875099990] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.908274939] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.941909236] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142340.975075238] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.008458312] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.042271432] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.075761528] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.108556372] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.141758493] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.175245019] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.208516958] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.241978849] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.275105810] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.308551601] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.341933974] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.374946494] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.408581585] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.442214191] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.475366159] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.508523336] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.541842823] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.575281220] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.608647363] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.642206243] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.674819184] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.708813359] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.741819187] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.775376473] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.808453322] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.841765296] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.875063023] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.908590875] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.941345408] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142341.975320939] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.008509985] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.041833271] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.074708208] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.109048956] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.141922299] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.175348468] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.208691779] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.241919207] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.274673160] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.308322489] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.341758353] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.374757430] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.408519467] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.441762304] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.475101519] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.508004558] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.541413272] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.574728784] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.608086583] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.641459330] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142342.675256052] [realsense_rgbd_data_saver]: Waiting for camera info...
+[WARN] [1782142342.708604745] [realsense_rgbd_data_saver]: Waiting for camera info...
+[INFO] [1782142342.723246523] [realsense_rgbd_data_saver]: Saved camera intrinsics to /home/user/shared_data/realsense/camera/2026-06-22_15-32-20/intrinsics.yaml
+[INFO] [1782142342.768067401] [realsense_rgbd_data_saver]: Saved frame 000000 | rgb=(720, 1280, 3), depth=(360, 640), depth_encoding=16UC1, rgb_depth_dt=0.0000s, depth_min=0.277, depth_max=4.262
+[INFO] [1782142342.768417058] [realsense_rgbd_data_saver]: Reached max_frames=1. Stop requested.
+[timestamp] Retrieving the latest timestamp from rgb/ ...
+Selected timestamp: 2026-06-22_15-32-20
+
+============================================================
+[auto-capture] New RGB-D frame captured.
+[auto-capture] Latest Realsense timestamp: 2026-06-22_15-32-20
+[auto-capture] Opening captured RGB image preview...
+============================================================
+
+
+[preview] RGB image captured after manual action
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-32-20_000000_auto_capture_after_manual_action.png
+
+============================================================
+[auto-capture] Preview opened.
+[auto-capture] live2 should detect the new frame and continue.
+============================================================
+
+[LOOP] New timestamp directory detected: 2026-06-22_15-32-20
+[LOOP] Waiting for RGB file to be ready...
+[LOOP] NEW frame:      /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[LOOP] NEW timestamp:  2026-06-22_15-32-20
+
+[LOOP] Stage 1 POST
+[LOOP] POST image:     /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[LOOP] POST condition: box_1 grasped with dual arms; red box remains intact.
+
+[DEBUG][validator-post-stage-1] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[DEBUG][validator-post-stage-1] Image key:  000000.png
+[DEBUG][validator-post-stage-1] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:post_1] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/post/prompt.txt
+[OK][validator:post_1] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/post/response_parsed.json
+[OK][validator:post_1] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_001/post/run_info.json
+[OK][validator:post_1] Execution time:         5.133s
+
+[POST validator:post_1] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "The red box (box_1) is visibly held between the robot's two arms in a symmetric dual-arm grasp, and it appears intact with no visible damage."
+}
+[LOOP] POST result:    matching
+[LOOP] POST reason:    The red box (box_1) is visibly held between the robot's two arms in a symmetric dual-arm grasp, and it appears intact with no visible damage.
+
+[LOOP] Stage 2 PRE
+[LOOP] PRE image:      /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[LOOP] PRE condition:  box_1 grasped; placement area on table available; red box remains handled gently.
+
+[DEBUG][validator-pre-stage-2] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-32-20/000000.png
+[DEBUG][validator-pre-stage-2] Image key:  000000.png
+[DEBUG][validator-pre-stage-2] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:pre_2] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/pre/prompt.txt
+[OK][validator:pre_2] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/pre/response_parsed.json
+[OK][validator:pre_2] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/pre/run_info.json
+[OK][validator:pre_2] Execution time:         5.073s
+
+[PRE validator:pre_2] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "The red box (box_1) is visibly held between the robot’s two arms; the table surface around the boxes appears available for placement, and there is no visible sign of rough handling or damage to the red box."
+}
+[LOOP] PRE result:     matching
+[LOOP] PRE reason:     The red box (box_1) is visibly held between the robot’s two arms; the table surface around the boxes appears available for placement, and there is no visible sign of rough handling or damage to the red box.
+
+[LOOP] Stage 2 ACTION
+[LOOP] Execute the robot action now, then save a new frame from the other docker.
+[LOOP] Waiting for a new Realsense frame newer than 2026-06-22_15-32-20...
+
+============================================================
+[manual-action] live2 requested a new Realsense frame #2.
+[manual-action] The pipeline is paused before capturing.
+============================================================
+
+============================================================
+[manual-action] PRE condition has been evaluated.
+[manual-action] live2 is now waiting for a new Realsense frame.
+[manual-action] Execute the manual robot manipulation now.
+[manual-action] When the action is finished, type 'y' and press Enter.
+============================================================
+
+Capture a new RGB-D frame now and continue live2? [y/N]: y
+[manual-action] Continuing with new frame capture...
+
+============================================================
+[auto-capture] Capturing RGB-D frame #2 from robot_docker...
+============================================================
+[2/8] Capturing 1 RGB-D frame(s)...
+[INFO] [1782142449.581358551] [realsense_rgbd_data_saver]: Saving data to: /home/user/shared_data/realsense
+[INFO] [1782142449.581737053] [realsense_rgbd_data_saver]: Run timestamp: 2026-06-22_15-34-09
+[INFO] [1782142449.582025968] [realsense_rgbd_data_saver]: Capture rate: 30.000 Hz
+[INFO] [1782142449.582301479] [realsense_rgbd_data_saver]: RGB topic: /head_cam/color/image_raw
+[INFO] [1782142449.582599391] [realsense_rgbd_data_saver]: Depth topic: /head_cam/aligned_depth_to_color/image_raw
+[INFO] [1782142449.584372047] [realsense_rgbd_data_saver]: Camera info topic: /head_cam/color/camera_info
+[INFO] [1782142449.584702710] [realsense_rgbd_data_saver]: Capture mode: stop after 1 valid frame(s)
+[INFO] [1782142449.585013657] [realsense_rgbd_data_saver]: Saving resized frames: 640x360
+[WARN] [1782142449.602619305] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.636047504] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.669304026] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.702747674] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.736254790] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.769342989] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.802630518] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.835568429] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.869603192] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.902670715] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.936931028] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142449.969506526] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.002705110] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.035883879] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.069307932] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.102053257] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.135326751] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.168761214] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.201997229] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.235695420] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.268888265] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.302161599] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.335450952] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.369317256] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.402687299] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.435971584] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.469169117] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.502629969] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.535966640] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.569555909] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.602314619] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142450.635594876] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[INFO] [1782142450.658371150] [realsense_rgbd_data_saver]: Saved camera intrinsics to /home/user/shared_data/realsense/camera/2026-06-22_15-34-09/intrinsics.yaml
+[WARN] [1782142450.669317813] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[INFO] [1782142450.729274454] [realsense_rgbd_data_saver]: Saved frame 000000 | rgb=(720, 1280, 3), depth=(360, 640), depth_encoding=16UC1, rgb_depth_dt=0.0336s, depth_min=0.253, depth_max=4.677
+[INFO] [1782142450.729627399] [realsense_rgbd_data_saver]: Reached max_frames=1. Stop requested.
+[timestamp] Retrieving the latest timestamp from rgb/ ...
+Selected timestamp: 2026-06-22_15-34-09
+
+============================================================
+[auto-capture] New RGB-D frame captured.
+[auto-capture] Latest Realsense timestamp: 2026-06-22_15-34-09
+[auto-capture] Opening captured RGB image preview...
+============================================================
+
+
+[preview] RGB image captured after manual action
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-34-09_000000_auto_capture_after_manual_action.png
+
+============================================================
+[auto-capture] Preview opened.
+[auto-capture] live2 should detect the new frame and continue.
+============================================================
+
+[LOOP] New timestamp directory detected: 2026-06-22_15-34-09
+[LOOP] Waiting for RGB file to be ready...
+[LOOP] NEW frame:      /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[LOOP] NEW timestamp:  2026-06-22_15-34-09
+
+[LOOP] Stage 2 POST
+[LOOP] POST image:     /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[LOOP] POST condition: box_1 placed on table; box_2 top unblocked; red box remains intact.
+
+[DEBUG][validator-post-stage-2] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[DEBUG][validator-post-stage-2] Image key:  000000.png
+[DEBUG][validator-post-stage-2] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:post_2] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/post/prompt.txt
+[OK][validator:post_2] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/post/response_parsed.json
+[OK][validator:post_2] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_002/post/run_info.json
+[OK][validator:post_2] Execution time:         5.316s
+
+[POST validator:post_2] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "The red box (box_1) is on the table at the right, the brown box (box_2) has no object resting on its top surface, and the red box appears intact with no visible damage."
+}
+[LOOP] POST result:    matching
+[LOOP] POST reason:    The red box (box_1) is on the table at the right, the brown box (box_2) has no object resting on its top surface, and the red box appears intact with no visible damage.
+
+[LOOP] Stage 3 PRE
+[LOOP] PRE image:      /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[LOOP] PRE condition:  Both end effectors empty; box_2 accessible on sides; red box remains intact.
+
+[DEBUG][validator-pre-stage-3] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-34-09/000000.png
+[DEBUG][validator-pre-stage-3] Image key:  000000.png
+[DEBUG][validator-pre-stage-3] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:pre_3] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/pre/prompt.txt
+[OK][validator:pre_3] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/pre/response_parsed.json
+[OK][validator:pre_3] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/pre/run_info.json
+[OK][validator:pre_3] Execution time:         4.243s
+
+[PRE validator:pre_3] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "No end-effectors are visible so they are assumed empty; box_2 (brown box) has clear left/right side access with no adjacent objects; the red box (box_1) appears intact with no visible damage."
+}
+[LOOP] PRE result:     matching
+[LOOP] PRE reason:     No end-effectors are visible so they are assumed empty; box_2 (brown box) has clear left/right side access with no adjacent objects; the red box (box_1) appears intact with no visible damage.
+
+[LOOP] Stage 3 ACTION
+[LOOP] Execute the robot action now, then save a new frame from the other docker.
+[LOOP] Waiting for a new Realsense frame newer than 2026-06-22_15-34-09...
+
+============================================================
+[manual-action] live2 requested a new Realsense frame #3.
+[manual-action] The pipeline is paused before capturing.
+============================================================
+
+============================================================
+[manual-action] PRE condition has been evaluated.
+[manual-action] live2 is now waiting for a new Realsense frame.
+[manual-action] Execute the manual robot manipulation now.
+[manual-action] When the action is finished, type 'y' and press Enter.
+============================================================
+
+Capture a new RGB-D frame now and continue live2? [y/N]: y
+[manual-action] Continuing with new frame capture...
+
+============================================================
+[auto-capture] Capturing RGB-D frame #3 from robot_docker...
+============================================================
+[2/8] Capturing 1 RGB-D frame(s)...
+[INFO] [1782142609.747479181] [realsense_rgbd_data_saver]: Saving data to: /home/user/shared_data/realsense
+[INFO] [1782142609.747895775] [realsense_rgbd_data_saver]: Run timestamp: 2026-06-22_15-36-49
+[INFO] [1782142609.748192297] [realsense_rgbd_data_saver]: Capture rate: 30.000 Hz
+[INFO] [1782142609.748487215] [realsense_rgbd_data_saver]: RGB topic: /head_cam/color/image_raw
+[INFO] [1782142609.748774048] [realsense_rgbd_data_saver]: Depth topic: /head_cam/aligned_depth_to_color/image_raw
+[INFO] [1782142609.749059028] [realsense_rgbd_data_saver]: Camera info topic: /head_cam/color/camera_info
+[INFO] [1782142609.750776601] [realsense_rgbd_data_saver]: Capture mode: stop after 1 valid frame(s)
+[INFO] [1782142609.751215076] [realsense_rgbd_data_saver]: Saving resized frames: 640x360
+[WARN] [1782142609.767666138] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.801083641] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.834833402] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.868242930] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.900889670] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.934824394] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142609.968230726] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.001490596] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.034248133] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.067762677] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.101061089] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.134768753] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.168205963] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.201697845] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.234932689] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.267960007] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.300806730] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.334428624] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.367728459] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.401070332] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.434405723] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.468247686] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.501651514] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.534862965] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.568227881] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.601590263] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.634917628] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.668164736] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.701572622] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.735212329] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.768246219] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.801284197] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.834838435] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.868297867] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.901357546] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.934167710] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142610.967725756] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.001484374] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.034984582] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.068130792] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.101159454] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.134386795] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.167715024] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.201521462] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.234896638] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.268061282] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.301632743] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.334890180] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.367906790] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.401335095] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.434864176] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.468491171] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.501858963] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.535161705] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.567857437] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.602001973] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.635007984] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.668338637] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.701358512] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.735124415] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.768531670] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.801599986] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.834932362] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.868157028] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.901116101] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.934806573] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142611.967724148] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.001624571] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.035223394] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.068199469] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.101315053] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.134848574] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.168092637] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.201644994] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.234315831] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.268200185] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.301534315] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.334887081] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.368083736] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.401595166] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.434914469] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.468143815] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.501555500] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.534768054] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.568120799] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.601300773] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.634147668] [realsense_rgbd_data_saver]: Waiting for RGB and aligned depth messages...
+[WARN] [1782142612.668151704] [realsense_rgbd_data_saver]: Waiting for camera info...
+[WARN] [1782142612.701794028] [realsense_rgbd_data_saver]: Waiting for camera info...
+[WARN] [1782142612.734883564] [realsense_rgbd_data_saver]: Waiting for camera info...
+[INFO] [1782142612.750189859] [realsense_rgbd_data_saver]: Saved camera intrinsics to /home/user/shared_data/realsense/camera/2026-06-22_15-36-49/intrinsics.yaml
+[INFO] [1782142612.791124520] [realsense_rgbd_data_saver]: Saved frame 000000 | rgb=(720, 1280, 3), depth=(360, 640), depth_encoding=16UC1, rgb_depth_dt=0.0000s, depth_min=0.346, depth_max=5.475
+[INFO] [1782142612.791549219] [realsense_rgbd_data_saver]: Reached max_frames=1. Stop requested.
+[timestamp] Retrieving the latest timestamp from rgb/ ...
+Selected timestamp: 2026-06-22_15-36-49
+
+============================================================
+[auto-capture] New RGB-D frame captured.
+[auto-capture] Latest Realsense timestamp: 2026-06-22_15-36-49
+[auto-capture] Opening captured RGB image preview...
+============================================================
+
+
+[preview] RGB image captured after manual action
+[preview] Copying image from perception_docker:
+          /workspace/shared_data/realsense/rgb/2026-06-22_15-36-49/000000.png
+[preview] Temporary host path:
+          /tmp/box_pipeline_preview/2026-06-22_15-36-49_000000_auto_capture_after_manual_action.png
+
+============================================================
+[auto-capture] Preview opened.
+[auto-capture] live2 should detect the new frame and continue.
+============================================================
+
+[LOOP] New timestamp directory detected: 2026-06-22_15-36-49
+[LOOP] Waiting for RGB file to be ready...
+[LOOP] NEW frame:      /workspace/shared_data/realsense/rgb/2026-06-22_15-36-49/000000.png
+[LOOP] NEW timestamp:  2026-06-22_15-36-49
+
+[LOOP] Stage 3 POST
+[LOOP] POST image:     /workspace/shared_data/realsense/rgb/2026-06-22_15-36-49/000000.png
+[LOOP] POST condition: box_2 grasped with dual arms; red box remains intact.
+
+[DEBUG][validator-post-stage-3] Image path: /workspace/shared_data/realsense/rgb/2026-06-22_15-36-49/000000.png
+[DEBUG][validator-post-stage-3] Image key:  000000.png
+[DEBUG][validator-post-stage-3] Pose entries:
+  - box_1: [0.672872, 0.058515, 0.087962]
+  - box_2: [0.777685, 0.069034, -0.01225]
+[OK][validator:post_3] Prompt saved to:        /workspace/eurobin/prompts_scenarios/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/post/prompt.txt
+[OK][validator:post_3] Parsed output saved to: /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/post/response_parsed.json
+[OK][validator:post_3] Run info saved to:      /workspace/eurobin/outputs/validator/centauro/v5/2026-06-22_08-26-55/gpt-5.2/cycle_001/stage_003/post/run_info.json
+[OK][validator:post_3] Execution time:         4.955s
+
+[POST validator:post_3] Parsed JSON:
+{
+  "result": "matching",
+  "reason": "The brown box (box_2) is held between both robot arms, and the red box (box_1) appears intact in the scene."
+}
+[LOOP] POST result:    matching
+[LOOP] POST reason:    The brown box (box_2) is held between both robot arms, and the red box (box_1) appears intact in the scene.
+
+======================================================
+LIVE2 COMPLETED
+Task completed:          True
+Outcome:                 task_completed
+Cycle summary saved:     /workspace/eurobin/outputs/validation_loop/centauro/2026-06-22_08-26-55/cycles/cycle_001/cycle_summary.json
+Full summary saved:      /workspace/eurobin/outputs/validation_loop/centauro/2026-06-22_08-26-55/full_pipeline_summary.json
+======================================================
+
+============================================================
+[cycle 1] live2 result
+============================================================
+task_completed:   True
+outcome:          task_completed
+saw_non_matching: False
+should_restart:   False
+============================================================
+
+
+============================================================
+[pipeline] live2 completed the task.
+[pipeline] Grasp/manipulation is disabled for now.
+[pipeline] Pipeline finished successfully.
+============================================================
+
+ecuzzocrea@iitavr002lw024u:~/eurobin_robot$ 
+
