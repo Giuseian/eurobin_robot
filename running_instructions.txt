@@ -23,15 +23,14 @@ docker compose exec perception bash
 ros2 launch realsense2_camera rs_launch.py
 ros2 run rqt_image_view rqt_image_view
 ros2 param set /head_cam align_depth.enable true
-python3 ~/PoseEstimation/pipeline/save_realsense_rgbd.py --capture_hz 30 --resize_width 640 --resize_height 360 --max_frames 1
-
+python3 ~/PoseEstimation/pipeline/save_realsense_rgbd.py --capture_hz 30 --resize_width 640 --resize_height 360 --max-frames 1
 conda activate sam3
 
 hf auth login
 
 python /workspace/PoseEstimation/pipeline/sam_script_fp.py \
   --data_root /workspace/shared_data/realsense \
-  --timestamp 2026-06-19_10-00-37 \
+  --timestamp 2026-06-19_15-13-27 \
   --prompt "box" \
   --image_id 000000
 conda deactivate
@@ -40,7 +39,7 @@ cd submodules/FoundationPose/
 
 python /workspace/PoseEstimation/pipeline/run_fp_single_frame.py \
   --data_root /workspace/shared_data/realsense \
-  --timestamp 2026-06-19_10-00-37\
+  --timestamp 2026-06-19_15-13-27\
   --mesh_file /workspace/shared_data/realsense/meshes/box_amazon_model/meshes/box_amazon_model.obj \
   --start_frame 000000 \
   --max_frames 20 \
