@@ -10,7 +10,7 @@ RUN sudo apt update && \
         cmake \
         python3-pip \
         ros-${ROS_DISTRO}-realsense2-camera \
-        ros-${ROS_DISTRO}-rmw-zenoh-cpp && \
+        ros-${ROS_DISTRO}-aruco-ros && \
     sudo rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/advrhumanoids/ros2_config.git /home/user/ros2_config && \
@@ -30,8 +30,5 @@ RUN echo "source /home/user/ros2_config/dds/cyclonedds/setup.bash" >> /home/user
     echo "export EUROBIN_WS=/home/user/eurobin" >> /home/user/.bashrc && \
     echo "export POSE_ESTIMATION_WS=/home/user/PoseEstimation" >> /home/user/.bashrc && \
     echo "export SHARED_DATA=/home/user/shared_data" >> /home/user/.bashrc
-
-RUN echo "export ZENOH_CONFIG_OVERRIDE='mode:\"client\";connect/endpoints=[\"tcp/10.24.4.100:7447\", \"tcp/10.24.4.102:7447\"]'" >> /home/user/.bashrc && \
-    echo "export RMW_IMPLEMENTATION=rmw_zenoh_cpp" >> /home/user/.bashrc
 
 WORKDIR /home/user
