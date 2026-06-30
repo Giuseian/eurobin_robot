@@ -43,24 +43,24 @@ class Config:
     # VLM scene perception parameters
     vlm_scenario: str = "centauro"
     vlm_scene_v: str = "v6"
-    vlm_scene_model: str = "gpt-5.2"
-    #vlm_scene_model: str = "gemini-robotics-er-1.6-preview"
+    #vlm_scene_model: str = "gpt-5.2"
+    vlm_scene_model: str = "gemini-robotics-er-1.6-preview"
 
     # VLM task planning / simulation / validation parameters
     vlm_task: str = "Grasp the brown box. The red box can also fall on the ground."
     vlm_plan_v: str = "v5"
     vlm_sim_v: str = "v5"
     vlm_validator_v: str = "v5"
-    vlm_plan_model: str = "o3"
-    vlm_sim_model: str = "gpt-5.2"
-    vlm_validator_model: str = "gpt-5.2"
+    vlm_plan_model: str = "gemini-robotics-er-1.6-preview"
+    vlm_sim_model: str = "gemini-robotics-er-1.6-preview"
+    vlm_validator_model: str = "gemini-robotics-er-1.6-preview"
 
     # live2 new-frame waiting parameters
     vlm_new_frame_timeout: float = 3600.0
     vlm_new_frame_poll_seconds: float = 1.0
 
     # Scene enrichment debug
-    scene_enrichment_debug: bool = False
+    scene_enrichment_debug: bool = True
 
     # FoundationPose parameters
     foundationpose_max_frames: int = 1
