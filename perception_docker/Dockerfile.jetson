@@ -1,0 +1,102 @@
+# =====================================================================
+# FoundationPose only, per Jetson Orin (aarch64, JetPack 6.2.x / L4T R36.x)
+#
+# La base va costruita UNA VOLTA sull'Orin con jetson-containers, che
+# fornisce pytorch/torchvision/pytorch3d/kaolin/nvdiffrast gia' compilati
+# per l'architettura CUDA di Orin (sm_87). Vedi perception_docker/README.jetson.md
+# per i comandi esatti.
+#
+#   git clone https://github.com/dusty-nv/jetson-containers
+#   cd jetson-containers && bash install.sh
+#   jetson-containers build --name=foundationpose-base pytorch torchvision torch3d kaolin nvdiffrast
+#
+# Poi builda questa immagine passando il nome effettivo prodotto sopra:
+#   docker build -f Dockerfile.jetson --build-arg BASE_IMAGE=foundationpose-base:<tag> -t perception-jetson .
+# =====================================================================
+
+ARG BASE_IMAGE=foundationpose-base:latest
+FROM ${BASE_IMAGE}
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+ENV POSE_ESTIMATION_DIR=/workspace/PoseEstimation
+ENV FOUNDATIONPOSE_DIR=/workspace/PoseEstimation/submodules/FoundationPose
+
+WORKDIR /workspace
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    bash \
+    ca-certificates \
+    wget \
+    curl \
+    cmake \
+    build-essential \
+    ninja-build \
+    libeigen3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# =========================
+# pybind11 (serve per compilare mycpp di FoundationPose)
+# =========================
+
+RUN git clone --branch v2.10.0 --depth 1 https://github.com/pybind/pybind11 /opt/pybind11 && \
+    cd /opt/pybind11 && mkdir build && cd build && \
+    cmake .. -DCMAKE_BUILD_TYPE=Release -DPYBIND11_INSTALL=ON -DPYBIND11_TEST=OFF && \
+    make -j"$(nproc)" && make install
+
+# libeigen3-dev da apt basta (Eigen e' header-only): niente bisogno di
+# ricompilare Eigen 3.4.0 da sorgente come nel Dockerfile x86 originale.
+
+# =========================
+# PoseEstimation + solo submodule FoundationPose
+# (SAM3 volutamente NON inizializzato: non e' nella priorita' attuale)
+# =========================
+
+RUN git clone https://github.com/Giuseian/PoseEstimation.git ${POSE_ESTIMATION_DIR} && \
+    cd ${POSE_ESTIMATION_DIR} && \
+    git submodule update --init submodules/FoundationPose
+
+# =========================
+# FoundationPose: build solo di mycpp.
+# kaolin e nvdiffrast arrivano gia' pronti dall'immagine base
+# (jetson-containers), quindi NON rilanciamo build_all.sh (che li
+# ricompilerebbe da /kaolin, path che qui non esiste).
+# =========================
+
+ENV TORCH_CUDA_ARCH_LIST="8.7"
+
+WORKDIR ${FOUNDATIONPOSE_DIR}
+
+RUN cd mycpp && mkdir -p build && cd build && \
+    cmake .. -DPYTHON_EXECUTABLE="$(which python3)" && \
+    make -j"$(nproc)"
+
+RUN mkdir -p weights demo_data debug
+
+RUN python3 -c "import kaolin, nvdiffrast; print('kaolin', kaolin.__version__)"
+
+# =========================
+# Dipendenze python restanti di FoundationPose (senza conda: usiamo
+# direttamente il python di sistema dell'immagine jetson-containers).
+# Alcuni pacchetti della lista upstream potrebbero non avere ancora
+# una wheel aarch64: se pip fallisce su uno di questi, commentalo e
+# valuta un sostituto o la build da sorgente.
+# =========================
+
+RUN python3 -m pip install --no-cache-dir \
+    scipy joblib scikit-learn ruamel.yaml trimesh pyyaml \
+    opencv-python opencv-contrib-python imageio open3d transformations \
+    einops kornia pyrender scikit-image omegaconf pypng roma seaborn \
+    imgaug timm albumentations xatlas rtree objaverse pycocotools numba h5py
+
+# =========================
+# Comando helper
+# =========================
+
+RUN printf '#!/usr/bin/env bash\ncd /workspace/PoseEstimation/submodules/FoundationPose\nexec "$@"\n' > /usr/local/bin/run_foundationpose \
+    && chmod +x /usr/local/bin/run_foundationpose
+
+WORKDIR ${POSE_ESTIMATION_DIR}
+
+CMD ["/bin/bash"]

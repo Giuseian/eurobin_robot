@@ -1,0 +1,23 @@
+services:
+  perception:
+    build:
+      context: .
+      dockerfile: Dockerfile.jetson
+      args:
+        # Nome:tag dell'immagine prodotta da `jetson-containers build ...`
+        # (vedi README.jetson.md). Sovrascrivi con:
+        #   BASE_IMAGE=foundationpose-base:rXX.X-... docker compose -f compose.jetson.yml build
+        BASE_IMAGE: ${BASE_IMAGE:-foundationpose-base:latest}
+    stdin_open: true
+    tty: true
+    privileged: true
+    entrypoint: /bin/bash
+    network_mode: host
+    volumes:
+      - ../shared_data:/workspace/shared_data
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    environment:
+      - DISPLAY
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    runtime: nvidia
