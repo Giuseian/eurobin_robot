@@ -51,7 +51,7 @@ JetPack 6.x / sm_87) di pytorch, torchvision, pytorch3d, kaolin e
 nvdiffrast in una sola immagine:
 
 ```bash
-jetson-containers build --name=foundationpose-base pytorch torchvision torch3d kaolin nvdiffrast
+jetson-containers build --name=foundationpose-base pytorch torchvision pytorch3d kaolin nvdiffrast
 ```
 
 Puo' richiedere parecchio tempo alla prima esecuzione (compila diverse
